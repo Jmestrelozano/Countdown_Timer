@@ -27,9 +27,7 @@ function showRemaining() {
   timeHorario[1].innerHTML = hours;
   timeHorario[2].innerHTML = minutes;
   timeHorario[3].innerHTML = seconds;
-  console.log("cambiando hora");
 
-  console.log(timer, seconds);
   if (seconds) {
     boxDown[3].classList.add("flip-animate");
   }
