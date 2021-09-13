@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #191a23,
+    #1d1c26,
+    #211e29,
+    #261f2b,
+    #2b212d
+  );
+}
+.imgFondo {
+  background-image: url("../assets/img/bg-stars.svg");
+  height: 70vh;
+}
+
+.contenedor-countdownTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.contenedor-countdownTime h4 {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.4rem;
+}
+
+.countdown-time {
+  display: flex;
+  width: 50%;
+  margin-top: 1rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.countdown-time .box {
+  position: relative;
+}
+
+.countdown-time .box .span{
+    color: #343650;
+    margin-top: 1rem;
+    font-family: "Red Hat Text", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.countdown-time .box .time {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #a0274c, #cb3160);
+  -webkit-text-fill-color: transparent;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.countdown-time .box-up {
+  background-color: #343650;
+  width: 10rem;
+  height: 3.5rem;
+  border-bottom: 1px solid;
+  filter: opacity(0.6);
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.countdown-time .box-down {
+  background-color: #343650;
+  width: 10rem;
+  height: 3.5rem;
+  box-shadow: 0px 9px 5px 0px #191924;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.footer-fondoImg img {
+  width: 100%;
+  height: 11.438rem;
+}
+.partial-circle-left {
+  position: relative;
+  height: 7px;
+  width: 100px;
+  overflow: hidden;
+  transform: rotate(90deg);
+  top: 4.3rem;
+  left: 49%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.partial-circle-rigth {
+  position: relative;
+  height: 7px;
+  width: 100px;
+  overflow: hidden;
+  transform: rotate(270deg);
+  top: 60px;
+  left: -49%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.partial-circle-rigth:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 65%;
+  bottom: 0;
+  left: 45px;
+  background: #1a1a24;
+}
+
+.partial-circle-left:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 65%;
+  bottom: 0;
+  left: 41px;
+  background: #1a1a24;
+}
